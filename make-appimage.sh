@@ -14,8 +14,8 @@ export DESKTOP=/usr/share/applications/io.missioncenter.MissionCenter.desktop
 # Deploy dependencies
 quick-sharun /usr/bin/missioncenter*
 
-echo 'MC_RESOURCE_DIR=${SHARUN_DIR}/share/missioncenter' >> ./AppDir/.env
-echo 'MC_MAGPIE_HW_DB=${SHARUN_DIR}/share/hw.db'         >> ./AppDir/.env
+echo 'MC_RESOURCE_DIR=${SHARUN_DIR}/share/missioncenter'       >> ./AppDir/.env
+echo 'MC_MAGPIE_HW_DB=${SHARUN_DIR}/share/missioncenter/hw.db' >> ./AppDir/.env
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
